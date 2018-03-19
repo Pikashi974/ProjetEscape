@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class DisplayMessageActivity extends AppCompatActivity {
 
     @Override
@@ -14,9 +17,19 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
-
+        String text = "";
         // Capture the layout's TextView and set the string as its text
         TextView textView = findViewById(R.id.textView2);
-        textView.setText("REUSSITE");
+        try {
+            InputStream is = getAssets().open("1.txt");
+            int size=is.available();
+            byte[] buffer=new byte[size];
+            is.read(buffer);
+            is.close();
+            text = new String(buffer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        textView.setText(text);
     }
 }
