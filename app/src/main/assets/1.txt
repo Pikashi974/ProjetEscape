@@ -1,0 +1,3 @@
+Vous vous réveillez dans une salle!Vous n'avez aucun souvenir de comment vous êtes arrivés ici ni de pourquoi.
+Tout ce que vous savez, c'est que vous devez sortir d'ici.Devant vous se présentent deux portes.
+Laquelle voules-vous vérifier en premier?Celle de gauche ou celle de droite?
