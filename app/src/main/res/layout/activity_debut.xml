@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.users_6425.projetescape.DisplayMessageActivity">
+    tools:context="com.example.users_6425.projetescape.N1">
 
     <TextView
         android:id="@+id/textView2"
@@ -45,12 +45,13 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/N2"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="Click"
         android:text="Vérifier la porte de gauche"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -58,12 +59,13 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/N3"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="Click"
         android:text="Vérifier la porte de droite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
