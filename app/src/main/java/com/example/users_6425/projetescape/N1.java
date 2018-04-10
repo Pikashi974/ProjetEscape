@@ -37,7 +37,9 @@ public class N1 extends AppCompatActivity {
 
     public void Click(View view) throws ClassNotFoundException {
         String ID = (getResources().getResourceEntryName(view.getId()));
-        Intent intent = new Intent(this, Class.forName(ID));
+
+        Intent intent = new Intent(this, Class.forName("com.example.users_6425.projetescape." + ID));
+
         startActivity(intent);
         finish();
     }
