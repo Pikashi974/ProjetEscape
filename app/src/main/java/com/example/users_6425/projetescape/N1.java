@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.users_6425.projetescape.MainActivity.*;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -34,8 +36,7 @@ public class N1 extends AppCompatActivity {
         textView.setText(text);
     }
 
-
-    public void Click(View view) throws ClassNotFoundException {
+    public void onClick(View view) throws ClassNotFoundException {
         String ID = (getResources().getResourceEntryName(view.getId()));
 
         Intent intent = new Intent(this, Class.forName("com.example.users_6425.projetescape." + ID));

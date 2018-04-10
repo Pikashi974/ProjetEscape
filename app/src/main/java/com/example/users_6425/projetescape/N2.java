@@ -3,6 +3,7 @@ package com.example.users_6425.projetescape;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -33,5 +34,14 @@ public class N2 extends AppCompatActivity {
             e.printStackTrace();
         }
         textView.setText(text);
+    }
+
+    public void onClick(View view) throws ClassNotFoundException {
+        String ID = (getResources().getResourceEntryName(view.getId()));
+
+        Intent intent = new Intent(this, Class.forName("com.example.users_6425.projetescape." + ID));
+
+        startActivity(intent);
+        finish();
     }
 }

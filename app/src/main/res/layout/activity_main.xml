@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.032" />
 
     <Button
-        android:id="@+id/newgame"
+        android:id="@+id/N1"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:onClick="sendMessage"
+        android:onClick="onClick"
         android:text="Nouvelle partie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -49,10 +49,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newgame" />
+        app:layout_constraintTop_toBottomOf="@+id/N1" />
 
     <Button
-        android:id="@+id/score"
+        android:id="@+id/UnderScore"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="48dp"
@@ -60,6 +60,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:onClick="onClick"
         android:text="Scores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
