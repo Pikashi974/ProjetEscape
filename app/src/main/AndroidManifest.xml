@@ -43,6 +43,159 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".N3" />
         </activity>
+        <activity
+            android:name=".N4"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N4" />
+        </activity>
+        <activity
+            android:name=".N5"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N5" />
+        </activity>
+        <activity
+            android:name=".N6"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N1" />
+        </activity>
+        <activity
+            android:name=".N7"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N7" />
+        </activity>
+        <activity
+            android:name=".N8"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N8" />
+        </activity>
+        <activity
+            android:name=".N9"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N9" />
+        </activity>
+        <activity
+            android:name=".N10"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N10" />
+        </activity>
+        <activity
+            android:name=".N11"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N11" />
+        </activity>
+        <activity
+            android:name=".N12"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N12" />
+        </activity>
+        <activity
+            android:name=".N13"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N13" />
+        </activity>
+        <activity
+            android:name=".N14"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N14" />
+        </activity>
+        <activity
+            android:name=".N15"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N15" />
+        </activity>
+        <activity
+            android:name=".N16"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N16" />
+        </activity>
+        <activity
+            android:name=".N17"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N17" />
+        </activity>
+        <activity
+            android:name=".N18"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N18" />
+        </activity>
+        <activity
+            android:name=".N19"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N19" />
+        </activity>
+        <activity
+            android:name=".N20"
+            android:parentActivityName=".N1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".N20" />
+        </activity>
         <activity android:name=".UnderScore"></activity>
     </application>
 

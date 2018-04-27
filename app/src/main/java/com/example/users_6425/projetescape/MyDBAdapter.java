@@ -5,11 +5,8 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MyDBAdapter {
     public static final int DB_VERSION = 1;
@@ -17,14 +14,11 @@ public class MyDBAdapter {
     public static final String COL_ID = "_id";
     public static final String COL_NAME = "name";
     public static final String COL_SCORE = "score";
-    public static final String COL_TAB = "tab";
     private static final String TABLE_SCORES = "table_scores";
-    private static final String CREATE_DB =
-            "create table " + TABLE_SCORES + " ("
-                    + COL_ID + " integer primary key autoincrement, "
-                    + COL_NAME + " text not null, "
-                    + COL_SCORE + " text not null, "
-                    + COL_TAB + " text not null);";
+    private static final String CREATE_DB = "CREATE TABLE if not EXISTS " + TABLE_SCORES + " ("
+            + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + COL_NAME + " TEXT NOT NULL, "
+            + COL_SCORE + " INTEGER);";
     private SQLiteDatabase mDB;
     private MyOpenHelper mOpenHelper;
 
@@ -44,25 +38,25 @@ public class MyDBAdapter {
     public Scores getScore(long id) throws SQLException {
         Scores cl = null;
         Cursor c = mDB.query(TABLE_SCORES,
-                new String[]{COL_ID, COL_NAME, COL_SCORE, COL_TAB},
+                new String[]{COL_ID, COL_NAME, COL_SCORE},
                 COL_ID + " = " + id, null, null, null, null);
         if (c.getCount() > 0) {
             c.moveToFirst();
-            cl = new Scores(c.getLong(0), c.getString(1), c.getInt(2), c.getString(3));
+            cl = new Scores(c.getLong(0), c.getString(1), c.getInt(2));
         }
         c.close();
         return cl;
     }
 
-    public List<Scores> getAllScores() {
-        List<Scores> clients = new ArrayList<Scores>();
+    public ArrayList<Scores> getAllScores() {
+        ArrayList<Scores> clients = new ArrayList<>();
         Cursor c = mDB.query(TABLE_SCORES,
-                new String[]{COL_ID, COL_NAME, COL_SCORE, COL_TAB},
+                new String[]{COL_ID, COL_NAME, COL_SCORE},
                 null, null, null, null, null);
         c.moveToFirst();
         while (!c.isAfterLast()) {
             clients.add(new Scores(
-                    c.getLong(0), c.getString(1), c.getInt(2), c.getString(3)));
+                    c.getLong(0), c.getString(1), c.getInt(2)));
             c.moveToNext();
         }
         c.close();
@@ -73,32 +67,16 @@ public class MyDBAdapter {
         ContentValues values = new ContentValues();
         values.put(COL_NAME, name);
         values.put(COL_SCORE, score);
+        //values.put(COL_TAB, tab);
         return mDB.insert(TABLE_SCORES, null, values);
     }
+
 
     public int updateScore(long id, String name, int score) {
         ContentValues values = new ContentValues();
         values.put(COL_NAME, name);
         values.put(COL_SCORE, score);
-        return mDB.update(TABLE_SCORES, values, COL_ID + "=" + id, null);
-    }
-
-    public Scores getLastID() throws SQLException {
-        Scores cl = null;
-        Cursor c = mDB.query(TABLE_SCORES,
-                new String[]{COL_ID, COL_NAME, COL_SCORE, COL_TAB},
-                null, null, null, null, null);
-        if (c.getCount() > 0) {
-            c.moveToLast();
-            cl = new Scores(c.getLong(0), c.getString(1), c.getInt(2), c.getString(3));
-        }
-        c.close();
-        return cl;
-    }
-
-    public int updateTab(long id, String tab) {
-        ContentValues values = new ContentValues();
-        values.put(COL_TAB, tab);
+        //values.put(COL_TAB, tab);
         return mDB.update(TABLE_SCORES, values, COL_ID + "=" + id, null);
     }
 
