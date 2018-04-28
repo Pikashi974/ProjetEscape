@@ -1,3 +1,4 @@
-Lorsque vous appuyez sur le bouton, vous entendez un grand bruit et vous apercevez une porte qui s'est ouverte.
+Lorsque vous appuyez sur le bouton, vous entendez un grand bruit et vous apercevez qu'une porte s'est ouverte.
 Vous décidez d'avancer dans cette nouvelle ouverture.
-La salle est sombre, apparemment vide.
+La salle est sombre, apparemment vide.Vous ne voyez aucun moyen de sortir de la salle
+Que décidez-vous de faire?
