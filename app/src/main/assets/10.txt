@@ -1,0 +1,4 @@
+Vous examinez le sol, au cas où un passage secret permettrait de quitter cette salle .
+Votre instinct semble être bon, car une des dalles au sol semble pouvoir être poussé.
+En revanche, rien n'indique que ce n'est pas un piège
+Que voulez-vous faire?

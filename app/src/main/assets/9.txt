@@ -1,0 +1,4 @@
+Vous passez votre main sur chaque brique du mur, en quête d'un passage secret.
+Votre instinct semble être bon, car une des briques semble pouvoir être poussé.
+En revanche, rien n'indique que ce n'est pas un piège.
+Que voulez-vous faire?

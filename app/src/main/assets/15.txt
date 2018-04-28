@@ -1,0 +1,8 @@
+Vous avez décidé d'emprunter le chemin vert.Face à vous se trouve une porte et deux clés.
+Une des clés est en or, l'autre en acier, et elles reposent tout deux sur un socle précis.
+La porte est vérouillé, et il semble qu'une des deux clés soient celle qui ouvre la porte.
+Un écriteau dit ceci:
+"D'un métal dur comme le fer
+On l'emploi aussi du moral de quelqu'un faisant preuve d'un optimisme à toute épreuve
+Qui est-ce ?"
+Quel clé prenez-vous?

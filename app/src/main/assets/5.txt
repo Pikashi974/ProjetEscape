@@ -1,0 +1,5 @@
+Vous frappez à la porte, dubitatif à l'efficacité de la maneuvre.Contre toute attente, vous entendez la porte se dévérouille et une personne vous accueille.
+"Bonjour, que voulez-vous?"Vous expliquez à la personne que vous n'avez souvenir de qui vous êtes, et que vous voulez sortir d'ici.
+"Je peux peut-être vous aider. Voyez-vous, cet endroit est comme un labyrinthe, concu pour piéger ceux qui y sont enfermés.Les pièges sont nombreux et mortels, mais ce n'est pas si difficile de les évite avec un peu de logique."
+Je peux vous indiquer le chemin à suivre si vous voulez!Je me sens bien ici donc je n'ai pas de raison de partir, mais si ça peut vous aider.Sachez en tout cas que cette salle est un cul de sac, donc si vous voulez sortir, il faudra prendre l'autre porte"
+Voulez-vous l'écouter ou prendre l'autre porte?

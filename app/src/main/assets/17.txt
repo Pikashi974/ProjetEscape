@@ -1,0 +1,3 @@
+Vous donnez votre réponse au géant qui vous regarde et répond:
+"Félicitations, cette réponse était la bonne!Vous pouvez passer le pont vers la sortie."
+En disant ça, il vous laisse passer sur le pont, vous permettant d'arriver à une porte que vous ouvrez!
